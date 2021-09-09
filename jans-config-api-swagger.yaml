@@ -5013,10 +5013,10 @@ components:
       properties:
         month:
           type: string
-        monthlyActiveUsers:
+        monthly_active_users:
           type: string
           description: Number of active users
-        tokenCountPerGrantType:
+        token_count_per_granttype:
           type: object
           additionalProperties: true			
 		
