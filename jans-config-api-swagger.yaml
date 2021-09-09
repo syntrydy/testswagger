@@ -5019,8 +5019,6 @@ components:
           format: int64
           description: Number of active users
           default: 0
-        tokenCountPerGrantType:
-          type: object
 			  
     TokenMapObject:
       type: object
