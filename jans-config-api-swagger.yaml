@@ -5013,12 +5013,16 @@ components:
       description: Server statistics data
       properties:
         month:
-          type: string
+          type: integer
         monthlyActiveUsers:
           type: integer
           format: int64
           description: Number of active users
           default: 0
+        tokenCountPerGrantType:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/TokenMapObject'
 			  
     TokenMapObject:
       type: object
