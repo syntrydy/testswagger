@@ -5005,24 +5005,20 @@ components:
           description: Notification Key
         publicVapidKey:
           type: string
-          description: Public Vapid Key
-		  
+          description: Public Vap id key	  
 		
     StatResponseItem:
       type: object
       description: Server statistics data
       properties:
         month:
-          type: integer
+          type: string
         monthlyActiveUsers:
-          type: integer
-          format: int64
+          type: string
           description: Number of active users
-          default: 0
         tokenCountPerGrantType:
           type: object
-          additionalProperties: {}
-			
+          additionalProperties: true			
 		
     HealthStatus:
       type: object
@@ -5039,8 +5035,7 @@ components:
           items:
             $ref: '#/components/schemas/HealthStatusItem'
             description: health check status details.
-            example: '"checks": [{"name": "jans-config-api liveness","status": "UP"},{"name": "jans-config-api readiness","status": "UP"}],"status": "UP"}'
-		
+            example: '"checks": [{"name": "jans-config-api liveness","status": "UP"},{"name": "jans-config-api readiness","status": "UP"}],"status": "UP"}'		
 
     HealthStatusItem:
       type: object
@@ -5052,7 +5047,4 @@ components:
         status:
           type: string
           description: Health parameter status
-
-          
-    
 	
