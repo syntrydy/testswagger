@@ -5021,15 +5021,8 @@ components:
           default: 0
         tokenCountPerGrantType:
           type: object
-          additionalProperties:
-            $ref: '#/components/schemas/TokenMapObject'
-			  
-    TokenMapObject:
-      type: object
-      description: A hashmap with statistical item as a key and the value as statistical value.
-      additionalProperties:
-        type: integer
-        format: int64
+          additionalProperties: {}
+			
 		
     HealthStatus:
       type: object
